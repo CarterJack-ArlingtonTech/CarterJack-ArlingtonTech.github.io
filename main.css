@@ -1,0 +1,15 @@
+h3 {
+    font-style: bold;
+    color:darkgoldenrod;
+    transition: font-style 1s;
+}
+header {
+    color: rgb(255,228,255);
+    text-align:right;
+    transition:color 1s;
+}
+header:hover {
+    color: rgb(185,158,185);
+    text-align:right;
+    transition: color 1s;
+}
