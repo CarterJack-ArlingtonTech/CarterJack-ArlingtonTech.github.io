@@ -5,9 +5,11 @@
 <p></p>
 <footer>
     <script>
+        var date = new Date()
     function timeUpdate() {
-        const date = new Date()
-        document.write(date)
+        var date = new date()
+        document.querySelector('footer').textContent = date
+        setTimeout(timeUpdate, 1000)
      }
      timeUpdate()
     </script>
