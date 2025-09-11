@@ -40,8 +40,4 @@ a:hover {
 body {
     background:black;
 }
-body:hover {
-    background:rgb(50, 50, 50);
-transition: background 1s;
-}
 div {background:midnightblue}
