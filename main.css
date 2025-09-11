@@ -38,5 +38,9 @@ a:hover {
     transition: color 1s;
 }
 body {
-    background-color:black;
+    background:black;
 }
+body:hover {
+    background:rgb(50, 50, 50);
+}
+div {background:midnightblue}
