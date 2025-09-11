@@ -1,5 +1,5 @@
 h3 {
-    font-style: bold;
+    font-weight: bold;
     color:darkgoldenrod;
     transition: font-style 1s;
 }
@@ -12,4 +12,31 @@ header:hover {
     color: rgb(185,158,185);
     text-align:right;
     transition: color 1s;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(255,228,255);
+    text-align: center;
+    transition: color 1s;
+}
+footer:hover {
+    color: rgb(185,158,185);
+    text-align: center;
+    transition: color 1s;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 1s;
+}
+a:hover {
+    color:blue;
+    text-decoration: none;
+    transition: color 1s;
+}
+body {
+    background-color:black;
 }
