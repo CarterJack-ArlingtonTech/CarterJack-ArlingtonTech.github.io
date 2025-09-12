@@ -40,4 +40,19 @@ a:hover {
 body {
     background:black;
 }
-div {background:midnightblue}
+div {background:midnightblue;
+    max-height:0 ;
+}
+div:hover {
+    size:100px;
+    background:white;
+    max-width: 100;
+}
+li {
+    color:rgb(255, 255, 255);
+    transition: 1s;
+}
+li:hover {
+    color:blue;
+    transition: 1s;
+}
