@@ -40,13 +40,8 @@ a:hover {
 body {
     background:black;
 }
-div {background:midnightblue;
-    max-height:0 ;
-}
-div:hover {
-    size:100px;
-    background:white;
-    max-width: 100;
+div.dropdown{
+    color: hsv(0,0,0);
 }
 li {
     color:rgb(255, 255, 255);
@@ -55,4 +50,25 @@ li {
 li:hover {
     color:blue;
     transition: 1s;
+}
+div {
+    position:fixed;
+    top:90px;
+    right:0;
+}
+a.topright {
+    position: fixed;
+    top:90px;
+    right:120px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 1s;
+}
+a.topright:hover{
+    position: fixed;
+    top:90px;
+    right:120px;
+    color:blue;
+    text-decoration: none;
+    transition: color 1s;
 }
