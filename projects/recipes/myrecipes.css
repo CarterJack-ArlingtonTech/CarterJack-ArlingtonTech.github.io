@@ -2,3 +2,31 @@ a.home {
 position: fixed;
 top:0;
 left: 11;}
+a.home:link {
+color:mistyrose;
+}
+a.home:visited {
+color:mistyrose;}
+strong.normal {
+    position: relative;
+    left: 10px;
+}
+.leftpx {
+    position: relative;
+    left: 10px;
+}
+table, th, td {
+  text-align: left;
+}
+.bold {
+    font-size: x-large;
+    text-align: left;
+}
+.recipe:link {
+    color:black;
+    text-decoration:none;
+}
+.recipe:visited {
+    color:black;
+    text-decoration: none;
+}
