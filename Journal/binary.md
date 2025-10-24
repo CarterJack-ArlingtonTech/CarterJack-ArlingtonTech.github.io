@@ -13,4 +13,9 @@ the beginning of next class.
 
 
 ### Picture of my Flippy Do
-<img class="rotate" src="../image/flippy_do.jpeg" width=100>
+<img class="rotate" src="/journal_images/flippy_do.jpeg" width=100>
+
+<br>
+
+### My high scores in the binary game
+<img src="/journal_images/binary_game_scores.png" width=150>
