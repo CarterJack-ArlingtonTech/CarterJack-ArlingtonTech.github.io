@@ -8,15 +8,15 @@ My Key:
 
 My Partner's Key:
 -----BEGIN PUBLIC KEY-----
-MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAtmbQusKfpwlupMtgDj3L
-PPp1PBquDQZF2RFTLy6EkVtaGLOPsEe6d4nyWin4M1Xicy32IsaX0pnCIwhcsQBj
-oMe3d0KMKWF7+YiNiSGDErs7XCguAhb/2i28ZvtHssxu907JOA/Nb/n+taKZT/sp
-QbBC1A6W2/CkWFSyiQBxNgIBwtjK2jUlQeAOuBWsRr0nPdPLdyoN1i1bIEVt5HWx
-HCR2O4Ky1nwmqbSWzMpN9eHiKEwMvgzPPCupA6vPfjKEKC6a7GBTpp/CzZaEo+PT
-0IiQhnnTohLGn95vBry7jSW1eZt72lopjthKUuD5RrmIKBEUjSm3jfH5/oEyMXr1
-ZAeR2iL01TEnUVe2g/fghgPnSOBhrBIbjBXfU2ap8xVRCdUUzZR+iRdn9Oz2QMTq
-quj+dW5CfTduTJGk4v3EvQ94/I3oYrv85mSoQUvx4MIyP3ZCPTjBG8VkNTiIxoCB
-45xCORrWM4F6BWtx+5xC61Ld6YKwodLAn1KujAHQk/5hAgMBAAE=
+MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAzPHgLh1OGWyFjgizFgNh
+ftWSPQEXFufIZOCxWuyO1JasGB7LVubjkoj+244Da5WxxUvHdAvoaTiL1IzFEVhC
+l54NMJktImVzPU7+bmR9KWg8+zglHADdf3R89mqlupiUu0TTOEXLkGXzADZPOqtT
+KqM7O+6vl7S96z8VHbLvcCAK08J4aUugWvcWTu+GPYthLCVmBA7AHoI3jqZn7Wmm
+L4cdOSEeewJuhBtVcPTd8sX8Ti9H5o0wAZYrUawFOHMLtYhLawbkUH6UksQ3lR8T
+q66iWlvD/VvxX7//Dl5bsMcf0iulv9z+pyluF0v+9rYRCo8/C0JKUCnsq56lGy4Y
+YOdPvnySQa240bXDhX0CkBI0ebpmxsZqU4sw0Bfff5/o5glnH0oPbipBAWMFxdbK
+d7Ko5GFaHl2FpRBv/lf//UKdFvKDme126rj4XqndO8eCl41fpqaqxdSqS998nund
+7Ngix4bO8yqX4dzeHCApTt8oSdF2v36NJWF0MW3K56s1AgMBAAE=
 -----END PUBLIC KEY-----
 
 Our initial shared key:
@@ -50,10 +50,10 @@ Go back to the first encrypted message that you sent (it should be in `rsa_encry
 This message is represented as a string of letters, numbers, and symbols. But we know that the real message is in binary.
 
 Select the first six characters from this message and copy them here:
-
-Using the ASCII table, convert these five characters to binary (if necessary,
+yDpjmw
+Using the ASCII table, convert these six characters to binary (if necessary,
 include leading zeroes so that each character is 8 bits): 
-
+01111001 01000100 01110000 01101010 01101101 01110111
 ### Transport Layer: Break your message into packets
 
 Assume that each packet can hold two bytes. Fill in the packet information below with the binary values you computed above.
@@ -61,33 +61,43 @@ Assume that each packet can hold two bytes. Fill in the packet information below
     =========
     Packet 1:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]  
+    Source: [Jack]
+    Destination: [Adrian]  
     Sequence: 1/3
-    Data: [binary for char 1] [binary for char 2]
+    Data: [01111001] [01000100]
     =========
     Packet 2:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Jack]
+    Destination: [Adrian]
     Sequence: 2/3 
-    Data: [binary for char 3] [binary for char 4]
+    Data: [01110000] [01101010]
     =========
     Packet 3:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Jack]
+    Destination: [Adrian]
     Sequence: 3/3
-    Data: [binary for char 5] [binary for char 6]
+    Data: [01101101] [01110111]
     =========
 
 ## Part 4: Reflection Questions
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
+
+
 - Why is it important that this protocol uses a new key for each message?
+
+
 - Why is it important that you never share your secret key?
+
+
 - In the transport layer, do these messages use TCP or UDP? Why?
+
+
 - Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
+
+
 - This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other
 information can they still see?
 
