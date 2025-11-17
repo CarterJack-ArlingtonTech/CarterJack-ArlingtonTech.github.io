@@ -237,21 +237,4 @@ information can they still see?
 
 ## What is a key ~(In~ ~encryption)~
 
-A key is a shared secret or known value between two parties that is used to encrypt a message, for example in a caesar cipher the key is the amount of spaces that the message is shifted by
-
-
-Input
-<div class="container">
-<h1>Caesar Cipher Encryptor</h1>
-        <label for="inputText">Enter text:</label>
-        <textarea id="inputText" rows="5" cols="40" placeholder="Input"></textarea>
-
-        <label for="shiftValue">key:</label>
-        <input type="number" id="shiftValue" min="0" max="25" value="">
-
-        <button id="encryptButton">Encrypt</button>
-
-        <h2>Result:</h2>
-        </div>
-        <p id="outputText"></p>
-        <script src="script.js"></script>
+A key is a shared secret or known value between two parties that is used to encrypt a message, for example in a caesar cipher the key is the amount of spaces that the message is shifted by.
