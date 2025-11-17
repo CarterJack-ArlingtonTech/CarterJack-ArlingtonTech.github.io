@@ -10,48 +10,19 @@
 
 
 
-My Key:
+My Key: 5
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC2b2ZbrtZp+F8J0QjW9dtyZ5Cfv3JpWY3s+G0LPWLmEQqtZFduWV++XuVwJuKVSzK7jgIcYHOYF9oOrVLMbtcUmZJsRtpRU/nH/tUxqwkvtv5qECkZQByFSoJpwtbdHXmdQ/Gkcr+7dCzGS2sEHSHUJvPRqgonU2X1rb6U89SiTlnGwFvuNqzLLYuEh0A8f2+lqfPPVvN+gu5xuZBqJcPKhkJ/o8K3XhZuwhZipL6nZo3xiz1FAq76W23G8K57pFgnRv2znXWS0l3dOZYMwxTFsGXesrvaDyE7ZIi9j5X7UIjRRkyzLYVxpHdbGAKYguaf4TmyBV5ejqt3N2dn2ZZOgToCuWljRML2CIoX6cQ0XzmAswLChms/B1mqJDNYcJBhAeqOA5/zVXid9urPPmwvubrZbH16Db2PT8+Jbcjbeqt0VnWLP/WllR7jQBKsPCVTbXw2LdHkOf/LPYSqXxRD7Zqa0jxFFumQv4sOaRcZnRUIuLiaeCaqd2D9D2gw/gk=
+
 ```
 
+My Partner's Key: 4
 ```
-
-My Partner's Key:
-```
-
------BEGIN PUBLIC KEY-----
-
-
-MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAzPHgLh1OGWyFjgizFgNh
-
-
-ftWSPQEXFufIZOCxWuyO1JasGB7LVubjkoj+244Da5WxxUvHdAvoaTiL1IzFEVhC
-
-
-l54NMJktImVzPU7+bmR9KWg8+zglHADdf3R89mqlupiUu0TTOEXLkGXzADZPOqtT
-
-
-KqM7O+6vl7S96z8VHbLvcCAK08J4aUugWvcWTu+GPYthLCVmBA7AHoI3jqZn7Wmm
-
-
-L4cdOSEeewJuhBtVcPTd8sX8Ti9H5o0wAZYrUawFOHMLtYhLawbkUH6UksQ3lR8T
-
-
-q66iWlvD/VvxX7//Dl5bsMcf0iulv9z+pyluF0v+9rYRCo8/C0JKUCnsq56lGy4Y
-
-
-YOdPvnySQa240bXDhX0CkBI0ebpmxsZqU4sw0Bfff5/o5glnH0oPbipBAWMFxdbK
-
-
-d7Ko5GFaHl2FpRBv/lf//UKdFvKDme126rj4XqndO8eCl41fpqaqxdSqS998nund
-
-
-7Ngix4bO8yqX4dzeHCApTt8oSdF2v36NJWF0MW3K56s1AgMBAAE=
-
------END PUBLIC KEY-----
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCyFymhzqOC1xNkTSBE7+5OYBi7OiL5var0DD1g89ybG4xj+Z3hYC5xEsp7dHqAiCQ+trvpAHq0fe9fW+aFgcBW1uPnv8gHMvK5bIqRLgWyynZKN2X8GFnFKXNtw3faZGeEWKJ7+kclY10ke7zcWl6rdWe3CNtWNHaO44qY76ZFqbsCd4b2on1a0ukYK5GM1QKRfKJegPAp+53fnd8tHBDXpEb9ke/vdmrsgmnD6sejw4vVChvaH533bpcusWshEGUAFoWw9rCieUUgIkGKubjZtD/zEWLQR+KqSvr1mmojdb3gQ53pHj11SFMiA0bTIaViV7CbbnCeO6a2zpRN/fVDaGCiOQqe1GWVvthRGhXCmIxW+0k5BHWiahUpYVAlVXjjhdGzzwykQCDk2SyNaekIY5C/on9ZylMUDjcXe+3OgSzRLK37FcdOSkvuQVYQ1gqlnFJ6ZrAjf7umJKEht8X/qZfw9nArpaLXG3UwLcnRoyXIhQo71mFBRnQR07WimG8=
 ```
 
 
-Our initial shared key:
+Our initial shared key: 9
 
 
 
@@ -72,16 +43,14 @@ and the messages that you received.
 
 
 | Encoded Message | Decoded Message | Key |
-
 | --------------- | --------------- | --- |
-
-|                 |                 |     |
-
-|                 |                 |     |
-
-|                 |                 |     |
-
-|                 |                 |     |
+| qnvvx | hello |  9  |
+|Mn Ofhp mtb fwj dtz ytifd?|Hi Jack how are you today?|5|
+|U'y iadduqp mnagf sqffuzs yk bdavqof pazq uz ftq zqjf 26:18 eqoazpe, ngf aftqdiueq yk pmk tme sazq iqxx. U efuxx tmhq za upqm itk ftq pqodkbfuaz imezf iadwuzs. Tai purruogxf iuxx ftq gzuf ftdqq fqef nq?
+|I'm worried about getting my project done in the next 26:18 seconds, but otherwise my day has gone well. I still have no idea why the decryption wasnt working. How difficult will the unit three test be?
+|22|
+|Tjp xvi adidnc ocz kmjezxo wt 8vh ojhjmmjr!
+|You can finish the project by 8am tomorrow!|21|
 
 
 
@@ -185,6 +154,7 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 
     =========
 
+~This~ ~is~ ~from~ ~before~
 
 
 ## Part 4: Reflection Questions
@@ -193,14 +163,14 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
 
-Symmetric encryption requires both parties to both have the same [key](#key-definition)
+    Symmetric encryption requires both parties to both have the same [key](#key-definition) whereas with assymetric encryption, both parties generate two keys each. A public key which is uploaded to a publically available place, and a private key which should never be shared with anyone. From this point forward if one party wanted to sent an encrypted message to the other, they would encrypt the message with the other users public key and then post 
 
 
 
 
 
 - Why is it important that this protocol uses a new key for each message?
-
+    Because if we reused keys, 
 
 
 
@@ -225,15 +195,17 @@ Symmetric encryption requires both parties to both have the same [key](#key-defi
 
 - Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
 
+    **Internet Layer** In the internet layer, the TCP Segments and UDP Datagrams are organized into IP packets. This layer is in charge of adressing IP adresses and routing packets across different networks. It determmines the path that the packets take and routes them by assigning headers.
+
+    **Link Layer** The Link Layer is responsible for 
 
 
 
 
 
+- This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other information can they still see? 
 
-- This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other
-
-information can they still see?
+    Even if the protocol successfully encrypts the **content** of the message, an adversary in the middle could still see the headers of the packet (which are unable to be encrypted without retaining functionality) as well as the sender of the message and the recipent. They can also see the size of the packet and the port numbers which along with a knowledge of internet protocols would enable the adversary to identify the type of file being sent. 
 
 ## What is a key ~(In~ ~encryption)~
 
