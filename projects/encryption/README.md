@@ -83,7 +83,7 @@ This message is represented as a string of letters, numbers, and symbols. But we
 Select the first six characters from this message and copy them here:
 
 
-yDpjmw
+<kbd>yDpjmw</kbd>
 
 
 Using the ASCII table, convert these six characters to binary (if necessary,
@@ -91,14 +91,13 @@ Using the ASCII table, convert these six characters to binary (if necessary,
 include leading zeroes so that each character is 8 bits): 
 
 
-01111001 01000100 01110000 01101010 01101101 01110111
+<kbd>01111001 01000100 01110000 01101010 01101101 01110111</kbd>
 
 ### Transport Layer: Break your message into packets
 
 
 
 Assume that each packet can hold two bytes. Fill in the packet information below with the binary values you computed above.
-
 
 
     =========
@@ -170,7 +169,8 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 
 
 - Why is it important that this protocol uses a new key for each message?
-    Because if we reused keys, 
+
+    It is important that we never reuse keys and make a new one for each message, because even if an attacker figured out your key for one message they would not be able to decrypt any of the other messages that you send.
 
 
 
@@ -179,7 +179,7 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 
 - Why is it important that you never share your secret key?
 
-    It is important not to share
+    It is important not to share your private key, because if someone else has it they can decrypt messages sent to you, or even sign messages with your key. One example of an action someone could take after accessing your private key would be to push commits to your Github repository, because Github uses private and public keys to verify the identity of anyone who attempts to push commits to you repository.
 
 
 
