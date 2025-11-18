@@ -179,7 +179,7 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 
 - Why is it important that you never share your secret key?
 
-
+    It is important not to share
 
 
 
@@ -187,6 +187,7 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 
 - In the transport layer, do these messages use TCP or UDP? Why?
 
+     Because of the use of encryption in this use case, TCP would be used to ensure that transmitted data is not lost or otherwise altered during transport, as with encrypted messages one switched bit will make it impossible to decrypt the message with the key. UDP which does not check for errors in transmitted data and is used for applications such as calls and live video transmission, and would not be reliable enough for an encrypted message which places the accuracy of data over transmission speeds.
 
 
 
@@ -197,7 +198,7 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 
     **Internet Layer** In the internet layer, the TCP Segments and UDP Datagrams are organized into IP packets. This layer is in charge of adressing IP adresses and routing packets across different networks. It determmines the path that the packets take and routes them by assigning headers.
 
-    **Link Layer** The Link Layer is responsible for 
+    **Link Layer** The Link Layer is responsible for physical device addresses (MAC adresses), and physically transmitting data between connected devices on a network. It handles the use of different mediums such as fiber optic cables, ethernet, and wifi.
 
 
 
