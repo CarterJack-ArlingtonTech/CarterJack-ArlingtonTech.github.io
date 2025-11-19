@@ -1,0 +1,7 @@
+table, tr, th, td {
+            border: 5px dashed rgb(255, 0, 0);
+            border-collapse: collapse;
+        }
+        body {
+            background-color: rgb(255,248,255);
+        }        
