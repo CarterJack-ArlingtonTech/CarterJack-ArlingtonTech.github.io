@@ -1,7 +1,54 @@
+body {
+     background-color: #fdfbf7; 
+     color: #3e2723;
+}
+
+
 table, tr, th, td {
-            border: 5px dashed rgb(255, 0, 0);
+            border: 5px solid rgb(0, 0, 0);
             border-collapse: collapse;
-        }
-        body {
-            background-color: rgb(255,248,255);
-        }        
+        } 
+
+* {
+   background-color: rbb(1,1,1);
+   font-family: "Verdana", "Arial";
+}
+
+.firstLink a {
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+
+}
+head {
+padding: 30px;
+}
+h1 {
+    background-color: #2e7d3209; 
+     border-radius: 8px;
+}
+* {
+    font-family: "Coral Pixels", serif;
+}
+
+.navbar {
+    text-align: right;
+    background-color: antiquewhite;
+    padding-bottom: 10px;
+    flex-direction: column;
+}
+
+iframe.times {
+    display: none;
+    text-align: right;
+}
+
+a.times:hover ~ iframe.times {
+    display: block;
+    position: absolute;
+    text-align: right;
+    right: 20px;
+}
+
+/*https://stackoverflow.com/questions/18749276/css-on-hover-show-another-element*/
