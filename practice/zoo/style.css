@@ -33,32 +33,45 @@ h1 {
 }
 
 .navbar {
-    text-align: right;
     background-color: antiquewhite;
     padding-bottom: 10px;
-    flex-direction: column;
 }
-
+.times {
+        flex-direction: column;
+}
 iframe.times {
     display: none;
     text-align: right;
 }
-
+a.times {
+    position: absolute;
+    right: 20px;
+}
 a.times:hover, iframe.times:hover ~ iframe.times {
     display: block;
     position: absolute;
     text-align: right;
     right: 20px;
 }
+a.animals {
+    position: absolute;
+    right: 140px;
+}
 iframe.animals {
     display: none;
-    text-align: right;
+    position: absolute;
+    right: 140px;
+}
+.animals {
+        flex-direction: column;
+        position: absolute;
+        right: 140px;
 }
 
 a.animals:hover, iframe.animals:hover ~ iframe.animals {
     display: block;
     position: absolute;
     text-align: right;
-    right: 20px;
+    right: 140px;
 }
 /*https://stackoverflow.com/questions/18749276/css-on-hover-show-another-element*/
