@@ -44,11 +44,21 @@ iframe.times {
     text-align: right;
 }
 
-a.times:hover ~ iframe.times {
+a.times:hover, iframe.times:hover ~ iframe.times {
     display: block;
     position: absolute;
     text-align: right;
     right: 20px;
 }
+iframe.animals {
+    display: none;
+    text-align: right;
+}
 
+a.animals:hover, iframe.animals:hover ~ iframe.animals {
+    display: block;
+    position: absolute;
+    text-align: right;
+    right: 20px;
+}
 /*https://stackoverflow.com/questions/18749276/css-on-hover-show-another-element*/
