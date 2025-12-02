@@ -10,17 +10,15 @@ table, tr, th, td {
         } 
 
 * {
-   background-color: rbb(1,1,1);
-   font-family: "Verdana", "Arial";
+    font-family: "Verdana", "Arial";
 }
 
 .firstLink a {
     background-color: rgb(255, 255, 255);
 }
 
-a {
-
-}
+/* Make anchors appear interactive */
+a.times, a.animals { cursor: pointer; }
 head {
 padding: 30px;
 }
@@ -36,25 +34,32 @@ h1 {
     background-color: antiquewhite;
     padding-bottom: 10px;
 }
+/* Allow absolute items inside navbar to be positioned relative to nav */
+.navbar { position: relative; }
 .times {
         flex-direction: column;
+}
+a.times {
+    position: absolute;
+    right: 20px;
+    top: 10px;
 }
 iframe.times {
     display: none;
     position: absolute;
     right: 20px;
+    top: 40px;
+    width: 300px;
+    height: 200px;
+    z-index: 999;
 }
-a.times {
-    position: absolute;
-    right: 20px;
-}
-a.times:hover, iframe.times:hover ~ iframe.times {
+/* Show the iframe when hovering the link; keep it visible when hovering the iframe */
+a.times:hover + iframe.times,
+iframe.times:hover {
     display: block;
-    position: absolute;
-    text-align: right;
-    right: 20px;
 }
-a.animals {
+.animals {
+    flex-direction: column;
     position: absolute;
     right: 140px;
 }
@@ -62,17 +67,15 @@ iframe.animals {
     display: none;
     position: absolute;
     right: 140px;
+    top: 40px;
+    width: 300px;
+    height: 200px;
+    z-index: 999;
 }
-.animals {
-        flex-direction: column;
-        position: absolute;
-        right: 140px;
-}
+/* .animals duplicate removed above; see earlier .animals block */
 
-a.animals:hover, iframe.animals:hover ~ iframe.animals {
+a.animals:hover + iframe.animals,
+iframe.animals:hover {
     display: block;
-    position: absolute;
-    text-align: right;
-    right: 140px;
 }
 /*https://stackoverflow.com/questions/18749276/css-on-hover-show-another-element*/
