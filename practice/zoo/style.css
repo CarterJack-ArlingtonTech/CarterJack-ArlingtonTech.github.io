@@ -17,7 +17,6 @@ table, tr, th, td {
     background-color: rgb(255, 255, 255);
 }
 
-/* Make anchors appear interactive */
 a.times, a.animals { cursor: pointer; }
 head {
 padding: 30px;
@@ -34,7 +33,6 @@ h1 {
     background-color: antiquewhite;
     padding-bottom: 10px;
 }
-/* Allow absolute items inside navbar to be positioned relative to nav */
 .navbar { position: relative; }
 .times {
         flex-direction: column;
@@ -51,9 +49,7 @@ iframe.times {
     top: 40px;
     width: 300px;
     height: 200px;
-    z-index: 999;
 }
-/* Show the iframe when hovering the link; keep it visible when hovering the iframe */
 a.times:hover + iframe.times,
 iframe.times:hover {
     display: block;
@@ -70,10 +66,7 @@ iframe.animals {
     top: 40px;
     width: 300px;
     height: 200px;
-    z-index: 999;
 }
-/* .animals duplicate removed above; see earlier .animals block */
-
 a.animals:hover + iframe.animals,
 iframe.animals:hover {
     display: block;
