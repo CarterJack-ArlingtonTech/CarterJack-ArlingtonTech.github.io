@@ -72,3 +72,11 @@ iframe.animals:hover {
     display: block;
 }
 /*https://stackoverflow.com/questions/18749276/css-on-hover-show-another-element*/
+
+
+
+
+iframe {
+    flex-grow: 1;
+    border: none;
+}
