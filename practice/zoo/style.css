@@ -41,7 +41,8 @@ h1 {
 }
 iframe.times {
     display: none;
-    text-align: right;
+    position: absolute;
+    right: 20px;
 }
 a.times {
     position: absolute;
