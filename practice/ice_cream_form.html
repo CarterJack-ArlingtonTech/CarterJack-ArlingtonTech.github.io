@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>You're Invited to an Ice Cream Party!</title>
+<script src="../js/validate.js"></script>
+<link rel="stylesheet" href="formsAssignment.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz@6..144&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=cloud_done" />
+<link rel="icon" href="formsFavicon.png" type="image/png">
+</head>
+<body>
+<div class="top">
+</div>
+<div class="header">
+<h1>You're Invited to an Ice Cream Party!</h1>
+<p>Please fill out this form to help us plan.</p>
+</div>
+<div id="emailAddress">
+<pcmj2310@email.vccs.edu <a href="https://accounts.google.com/AccountChooser?continue=https://docs.google.com/forms/d/e/1FAIpQLSfaXMBLhLPb3lut-a6YQY1SsWLfXCTRpaX2x9fvLbwe7_DJ5Q/viewform&service=wise">Switch account</a><span class="material-symbols-outlined" id="fournine">
+cloud_done
+</span>
+</p>
+<p>
+<img src="emailNotSent.svg" width=16px height=16px id="notSharedIcon">
+Not shared
+</p>
+</div>
+<div id="requiredQuestionExplained">
+<p class="required">* Indicates required question</p>
+</div>
+
+<div>
+<form action="https://httpbin.org/post" method="post">
+<label for="email">What is your email address? </label><p class="required">*</p>
+<br>
+<input type="email" name="email" required id="email" placeholder="Your answer">
+</div>
+<div>
+<label for="phoneNumber">What is your phone number?</label><p class="required">*</p>
+<br>
+<input type="tel" name="phoneNumber" required id="phoneNumber" placeholder="Your answer">
+</div>
+<div>
+<label for="numberOfPeople">How many people will you bring with you to the party?</label><p class="required">*</p>
+<br>
+<input type="number" name="numberOfPeople" min="1" id="numberOfPeople" required placeholder="Your answer">
+</div>
+<div>
+<label for="favIceCream">What is your favorite flavor of ice cream?</label>
+<fieldset style="border:none">
+    <label><input type="radio" name="radio" value="vanilla"  id="favIceCream"/> Vanilla</label>
+    <br><label><input type="radio" name="radio" value="chocolateChip"/> Chocolate Chip</label>
+    <br><label><input type="radio" name="radio" value="strawberry"/> Strawberry</label>
+    <br><label><input type="radio" name="radio" value="other"/> Other</label>
+</fieldset>
+</div>
+<div>
+<label for="toppings">Which toppings do you like?</label>
+<fieldset style="border:none">
+    <label><input type="checkbox" name="sprinkles" value="sprinkles" id="toppings" /> <span>Sprinkles</span></label>
+<br>    
+<label><input type="checkbox" name="magicShell" value="magicShell" /> <span>Magic Shell</span></label>
+<br>    
+<label><input type="checkbox" name="chocolateChips" value="chocolateChips" /> <span>Chocolate Chips</span></label>
+<br>   
+<label><input type="checkbox" name="gummyBears" value="gummyBears" /> <span>Gummy Bears</span></label>
+</fieldset>
+</div>
+<div id="submit">
+
+<button type="submit">Submit</button>
+</div>
+</form>
+</body>
+</html>
