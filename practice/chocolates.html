@@ -1,0 +1,182 @@
+ <html>
+    <head>
+        <style>
+            body{
+                background: linear-gradient(135deg, #1a2980, #26d0ce);
+                height: 100vh;
+            }
+            h1{
+                text-align: center;
+                font-family: Tahoma, sans-serif;
+                color: white;
+            }
+            .container {
+              display: grid;
+              width: 80vw;
+              height: 80vh;
+              margin: auto;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr;
+              background-color: Thistle;
+              padding: 10px;
+              border-radius: 20px;
+              border: 8px solid red;
+            }
+            .heart {
+              height: 20vh; /* adjust to control the size */
+              aspect-ratio: 1;
+              --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+              -webkit-mask-box-image: var(--_m);
+                         mask-border: var(--_m);
+              clip-path: polygon(-41% 0,50% 91%, 141% 0);
+              background-color: chocolate;
+              margin: auto;
+            }
+            /* fallback until better support for mask-border */
+            @supports not (-webkit-mask-box-image: var(--_m)) { 
+              .heart {
+                mask:
+                 radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+                 radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+                 conic-gradient(#000 0 0) bottom/100% 50% no-repeat;
+              }
+            }
+            #chocolateheart{
+                grid-column-start: 2;
+                grid-row-start:2;
+            }
+            .lilbits{
+                grid-column-start: 1;
+                grid-row-start: 1;
+                display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr;
+            }
+            #mnm{
+                grid-column-start:2;
+                grid-row-start:1;
+                width:10vh;
+                height:10vh;
+                background-color:red;
+                border-radius:50%;
+                margin: auto;
+                display: grid;
+                place-items: center;
+                font-size: 2em;
+            }
+	    #chocolatebar{
+		grid-column-start:3;
+		grid-row-start:1;
+		width:60vh;
+		height:15vh;
+		background-color:brown;
+		border-radius:10px;
+		margin: auto;
+	    }
+        #gradientbar {
+            grid-column:1/3;
+            grid-row: 2/2;
+            width:40vh;
+            height:10vh;
+            background-image:linear-gradient( brown,chocolate,brown,brown, chocolate)
+        }
+        .pixel {
+            --n: 5;     /* the granularity */
+  --s: 8px;  /* control the pixel size */
+  --w: 140px; /* the image size */
+  
+  width: calc(round(var(--w),var(--s)) + var(--s)/2);
+  aspect-ratio: 1;
+  --_m:#0000 calc((var(--s)*(var(--n) + .5))/sqrt(2)),
+       #000 0 calc(100% - (var(--s)*(var(--n) + .5))/sqrt(2)),
+       #0000 0;
+  clip-path: polygon(
+    50% calc(var(--s)*var(--n) - 50%),calc(150% - var(--s)*var(--n)) 50%,
+    50% calc(150% - var(--s)*var(--n)),calc(var(--s)*var(--n) - 50%) 50%);
+  mask:
+    repeating-conic-gradient(#0000 0 25%,#000 0 50%) 0 0/var(--s) var(--s),
+    linear-gradient(-45deg,var(--_m)) intersect,
+    linear-gradient( 45deg,var(--_m));
+        }
+        #darkChocolate {
+            background-color: peru;
+
+        }
+        #whiteChocolate {
+            background-color: bisque;
+
+        }
+        .star {
+  width: 150px;  
+  aspect-ratio: 1;
+  background: #F8CA00;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
+  /* or more simple
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+   */
+}
+#chocolate {
+    background-color: peru;
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+#reesesCup {
+    background-color: peru;
+    position: absolute;
+    grid-row:1/1;
+    grid-column:1/1;
+}
+.polygon {
+  width: 100px; /* adjust to control the size */
+  aspect-ratio: 1;
+  clip-path: polygon(100% 50%,90.45% 79.39%,65.45% 97.55%,34.55% 97.55%,9.55% 79.39%,0% 50%,9.55% 20.61%,34.55% 2.45%,65.45% 2.45%,90.45% 20.61%);
+}
+.polygonBorder {
+  width: 100px; /* adjust to control the size */
+  aspect-ratio: 1;
+  clip-path: polygon(100% 50%,90.45% 79.39%,65.45% 97.55%,34.55% 97.55%,9.55% 79.39%,0% 50%,9.55% 20.61%,34.55% 2.45%,65.45% 2.45%,90.45% 20.61%,100% 50%,calc(90.45% - 4.85px) calc(20.61% - -3.53px),calc(65.45% - 1.85px) calc(2.45% - -5.71px),calc(34.55% - -1.85px) calc(2.45% - -5.71px),calc(9.55% - -4.85px) calc(20.61% - -3.53px),calc(0% - -6px) calc(50% - 0px),calc(9.55% - -4.85px) calc(79.39% - 3.53px),calc(34.55% - -1.85px) calc(97.55% - 5.71px),calc(65.45% - 1.85px) calc(97.55% - 5.71px),calc(90.45% - 4.85px) calc(79.39% - 3.53px),calc(100% - 6px) calc(50% - 0px),calc(90.45% - 4.85px) calc(20.61% - -3.53px));
+}
+#reesesBorder {
+    background-color: black;
+    position: inherit;
+    grid-row: 1/1;
+    grid-column:1/1;
+}
+#reeses {
+    grid-row: 1/1;
+    grid-column: 1/1;
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>Here, I got you some chocolates &lt;3</h1>
+        <div class="container">
+            <div class="heart" id="chocolateheart"></div>
+            <div class="lilbits">
+                <div id="mnm">
+                m
+                </div>
+                <!-- TODO: Add some more divs here, and style them
+                    to fill in the 'lilbits' part of the chocolate box -->
+                    <div class="star" id="chocolate" class="lilbits"></div>
+                    <div id="reeses">
+                    <div id="reesesCup" class="polygon" class="lilbits"></div>
+                    <div id="reesesBorder" class="polygonBorder"></div>
+                    </div>
+            </div>
+	    <div id="chocolatebar"></div>
+        <div id="gradientbar"></div>
+        <div class="pixel" id="darkChocolate"></div>
+        <div class="pixel" id="whiteChocolate"></div>
+
+            <!-- TODO: Add some more divs here, and style them
+                to fill in the other sections of the chocolate box -->
+        </div>
+    </body>
+</html> 
