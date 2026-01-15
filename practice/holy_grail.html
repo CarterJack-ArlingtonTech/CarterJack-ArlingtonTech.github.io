@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Behold! The Holy Grail!</title>
+<style>
+body {
+border-color: white;
+border-style: solid;
+border-width: 5px;}
+.grid {
+	display: grid;
+	height: 100vh;
+	grid: 'header header header' 1fr 'right main left' 3fr 'down down down' 2fr / 200px 1fr;
+	gap: 5px;
+	text-align: center;
+	font-size: (5vh+5vw)/2;
+}
+.main {
+	grid-area: main;
+	background: green;
+	color: white;
+	text-align: center;
+	font-size: 3px;
+}
+.right {
+	grid-area: right;
+	background: green;
+}
+.left {
+	grid-area: left;
+	background: green;
+}
+.footer {
+	grid-area: down;
+	background: green;
+}
+.header {
+	grid-area: header;
+	background: green;
+}
+</style>
+	</head>
+	<body>
+
+	<div class="grid">
+			<div class="left">
+				SIDE
+			</div>
+			<div class="right">
+				SIDE
+			</div>
+			<div class="footer">
+				FOOT
+			</div>
+			<div class="header">
+				HEADER
+			</div>
+		<div class="main">
+			Main
+			</div>
+	</div>
+	</body>

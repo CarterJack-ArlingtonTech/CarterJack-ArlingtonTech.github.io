@@ -1,0 +1,159 @@
+@property --color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #c0ffee;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  grid-area: head;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  grid-area: head;
+}
+
+.grid-container {
+  display: grid;
+  grid:
+    'head head' auto
+    'side main' 1fr
+    /150px 1fr;
+  min-height: 100vh;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  grid-area: head;
+}
+
+.sidebar {
+  grid-area: side;
+  padding: 15px;
+}
+
+.main-content {
+  grid-area: main;
+  padding: 15px;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: linear-gradient(#335533, navy);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+body {
+    background-image: linear-gradient(to bottom right, #335533, navy);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.card1 {
+    position: relative;
+    top: 40vh;
+    border-radius: 10px;
+    width: 20vw;
+    height: 40vh;
+    background-color: #166d8a1a;
+    grid-area:card1;
+    border-color:var(--color)
+    border-width:10px;
+    border: 10px solid #166d8aad;
+    border: 10px solid;
+}
+.card2 {
+    position: relative;
+    top: 40vh;
+    border-radius: 10px;
+    width: 20vw;
+    height: 40vh;
+    background-color: #166d8a1a;
+    grid-area:card2;
+    border-color:var(--color)
+    border-width:10px;
+    border: 10px solid #166d8aad;
+    border: 10px solid;
+}
+.card3 {
+    position: relative;
+    top: 40vh;
+    border-radius: 10px;
+    width: 20vw;
+    height: 40vh;
+    background-color: #166d8a1a;
+    grid-area:card3;
+    border-color:var(--color)
+    border-width:10px;
+    border: 10px solid #166d8aad;
+    border: 10px solid;
+}
+#container {
+    height: 40vh;
+}
+.grid{
+    display:grid;
+    grid: 'card1 card2 card3'
+
+}
+.title {
+    color:azure;
+    font-size:xx-large;
+}

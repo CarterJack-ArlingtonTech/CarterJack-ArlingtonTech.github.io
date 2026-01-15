@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hermit": "^0.2.2"
+  }
+}
