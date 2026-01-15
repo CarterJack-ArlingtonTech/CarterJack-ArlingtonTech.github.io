@@ -23,5 +23,7 @@ body {
     grid-template: 'rightNav centerNav leftNav';
 }
 #rightNav {
-
+    grid-row:1;
+    grid-column: 1;
 }
+#leftNav
