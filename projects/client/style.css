@@ -1,29 +1,102 @@
-.navElement {
-  transition: all 1s ease; 
-  backdrop-filter: blur(1px);
-  cursor:pointer;
-  width: fit-content;
-  background-color: transparent;
-  border-radius: 5px;
-  padding: 2px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; 
+    color: #333;
 }
 
-.navElement:hover {
-  backdrop-filter: blur(5px); 
-  cursor: pointer;
-  transition: all 1s ease;
-  width: fit-content;
-  background-color: rgba(240, 248, 255, 0.156);
+header {
+    background-color: #003366; 
+    color: #fff;
+    padding: 1.5vw; 
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #0055a4; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
 }
-body {
-    background-image: url('media/test.jpg');
+s
+.logo h1 {
+    margin: 0;
+    font-size: 2vw; 
+    margin-left: 1vw; 
 }
-#navMenu {
-    display: grid;
-    grid-template: 'rightNav centerNav leftNav';
+
+nav {
+    background-color: transparent;
+    padding: 0;
 }
-#rightNav {
-    grid-row:1;
-    grid-column: 1;
+
+nav a {
+    color: #fff;
+    padding: 0.8vw 1.2vw; 
+    font-size: 1.2vw; 
+    transition: background-color 0.3s ease;
 }
-#leftNav
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+}
+
+
+
+.container {
+    display: flex;
+    padding: 1vw;
+    margin-top: 11vw;
+}
+
+main {
+    flex: 3;
+    margin-right: 1vw;
+    background-color: #fff;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+aside {
+    flex: 1;
+    background-color: #fff;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+aside h3 {
+    margin-top: 0;
+    font-size: 1.5vw;
+    border-bottom: 2px solid #0055a4;
+    padding-bottom: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 0.5vw;
+}
+
+aside a {
+    color: #0055a4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+aside a:hover {
+    color: #0077cc;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1vw;
+    background-color: #003366;
+    color: #fff;
+}
